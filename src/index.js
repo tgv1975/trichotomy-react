@@ -1,22 +1,8 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import Trichotomy from './Trichotomy';
+import TrichotomyBar from './TrichotomyBar';
+import TrichotomyCenterpiece from './TrichotomyCenterpiece';
 
-import styles from './styles.css'
+Trichotomy.Bar = TrichotomyBar;
+Trichotomy.Centerpiece = TrichotomyCenterpiece;
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export default Trichotomy;

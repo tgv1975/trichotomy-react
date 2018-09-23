@@ -1,5 +1,31 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100%;
+}
+
+.bordered {
+    border: 1px solid red;
+}
+
+.demo-container {
+    background: silver;
+}
+
+.demo-top {
+    background: blue;
+    color: white;
+}
+
+.demo-centerpiece {
+    background: ivory;
+}
+
+.demo-bar {
+    background: aqua;
+    flex: .3;
 }
