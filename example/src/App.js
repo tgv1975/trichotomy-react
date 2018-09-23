@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'trichotomy-react'
+import Trichotomy from 'trichotomy-react'
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Trichotomy text='Modern React component module' />
       </div>
     )
   }

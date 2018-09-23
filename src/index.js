@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import styles from './styles.css'
+import styles from './styles.css';
 
-export default class ExampleComponent extends Component {
+import 'trichotomy/dist/trichotomy.min.css';
+
+export default class Trichotomy extends Component {
   static propTypes = {
     text: PropTypes.string
   }
@@ -14,8 +16,8 @@ export default class ExampleComponent extends Component {
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className={styles.trichotomy}>
+        Trichotomy: {text}
       </div>
     )
   }
