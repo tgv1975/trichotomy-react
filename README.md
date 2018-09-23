@@ -12,7 +12,17 @@ npm install --save trichotomy-react
 
 ## Usage
 
-The code below will produce [this](https://tgv1975.github.io/trichotomy-react/).
+The code below will produce [this](https://tgv1975.github.io/trichotomy-react/), provided you have loaded [this stylesheet](https://github.com/tgv1975/trichotomy-react/blob/develop/example/src/index.css), too.
+
+None of the CSS classes in the className property are necessary for this to function. They only add visuals.
+
+However, make sure to have
+
+```css
+height: 100%
+```
+
+on your body and #root element of your app!
 
 ```jsx
 import React, { Component } from 'react';
