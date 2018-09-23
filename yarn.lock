@@ -7325,9 +7325,9 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
 
-trichotomy@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/trichotomy/-/trichotomy-1.0.2.tgz#b6f32570ba303dd410a3fe0453222655f64921e3"
+trichotomy@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/trichotomy/-/trichotomy-1.0.4.tgz#d12f159c149914ef4fbae9ed72e7e3dea044a65e"
 
 trim-newlines@^1.0.0:
   version "1.0.0"

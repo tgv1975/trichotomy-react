@@ -58,6 +58,6 @@
     "dist"
   ],
   "dependencies": {
-    "trichotomy": "^1.0.2"
+    "trichotomy": "^1.0.4"
   }
 }
