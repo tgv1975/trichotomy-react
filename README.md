@@ -12,6 +12,8 @@ npm install --save trichotomy-react
 
 ## Usage
 
+The code below will produce [this](https://tgv1975.github.io/trichotomy-react/).
+
 ```jsx
 import React, { Component } from 'react';
 
