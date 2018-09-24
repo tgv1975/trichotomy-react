@@ -52,16 +52,16 @@ export default class App extends Component {
                                 direction={'vertical'}>
                                 <Trichotomy.Bar
                                     className="demo-top bordered">
-                                    Left Sidebar Header
+                                    Right Sidebar Header
                                 </Trichotomy.Bar>
 
                                 <Trichotomy.Centerpiece
                                     className="demo-centerpiece bordered">
-                                    Left Sidebar Center
+                                    Right Sidebar Center
                                 </Trichotomy.Centerpiece>
 
                                 <Trichotomy.Bar>
-                                    Left Sidebar Footer
+                                    Right Sidebar Footer
                                 </Trichotomy.Bar>
                             </Trichotomy>
 
