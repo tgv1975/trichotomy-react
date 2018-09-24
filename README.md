@@ -49,7 +49,8 @@ class Example extends Component {
 
                         <Trichotomy.Bar
                             className="demo-bar bordered">
-                            <Trichotomy>
+                            <Trichotomy
+                                direction={'vertical'}>
                                 <Trichotomy.Bar
                                     className="demo-top bordered">
                                     Left Sidebar Header
@@ -74,7 +75,8 @@ class Example extends Component {
                         <Trichotomy.Bar
                             className="demo-bar bordered"
                             right={true}>
-                            <Trichotomy>
+                            <Trichotomy
+                                direction={'vertical'}>
                                 <Trichotomy.Bar
                                     className="demo-top bordered">
                                     Left Sidebar Header
