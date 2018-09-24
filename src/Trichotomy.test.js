@@ -1,7 +1,6 @@
 import React from 'react';
 import Trichotomy from './Trichotomy';
 import renderer from 'react-test-renderer';
-import timestamp from 'time-stamp';
 
 describe('Trichotomy', () => {
     it('Trichotomy is truthy', () => {
