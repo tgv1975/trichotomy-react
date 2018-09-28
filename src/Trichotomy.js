@@ -5,6 +5,7 @@ import trichotomy from 'trichotomy/dist/trichotomy.min.css';
 
 export default class Trichotomy extends Component {
     static propTypes = {
+        tag: PropTypes.string,
         direction: PropTypes.oneOf(['vertical', 'horizontal']).isRequired
     }
 
@@ -12,8 +13,11 @@ export default class Trichotomy extends Component {
         const {
             children,
             className,
+            tag,
             direction
         } = this.props
+
+        let Tag = tag || 'div';
 
         let cssClass = (className &&
             className.concat(' ', trichotomy.trichotomy)) ||
@@ -29,9 +33,9 @@ export default class Trichotomy extends Component {
         }
 
         return (
-            <div className={cssClass}>
+            <Tag className={cssClass}>
                 {children}
-            </div>
+            </Tag>
         )
     }
 }
