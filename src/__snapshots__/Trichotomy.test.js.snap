@@ -12,14 +12,36 @@ exports[`Trichotomy Renders Trichotomy container <NAV> element (custom) 1`] = `
 />
 `;
 
-exports[`Trichotomy Renders Trichotomy container element with "trichotomy horizontal" CSS classes 1`] = `
+exports[`Trichotomy Renders Trichotomy container element with "someCustomClass trichotomy vertical" CSS classes if set 1`] = `
+<div
+  className="someCustomClass trichotomy horizontal"
+/>
+`;
+
+exports[`Trichotomy Renders Trichotomy container element with "trichotomy horizontal" CSS classes if set 1`] = `
 <div
   className="trichotomy horizontal"
 />
 `;
 
-exports[`Trichotomy Renders Trichotomy container element with "trichotomy vertical" CSS classes 1`] = `
+exports[`Trichotomy Renders Trichotomy container element with "trichotomy vertical" CSS classes if set 1`] = `
 <div
   className="trichotomy vertical"
 />
+`;
+
+exports[`Trichotomy Renders children into Trichotomy container element  1`] = `
+<div
+  className="trichotomy vertical"
+>
+  <div>
+    First child
+  </div>
+  <div>
+    Second child
+  </div>
+  <div>
+    Third child
+  </div>
+</div>
 `;

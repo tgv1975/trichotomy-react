@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trichotomy Renders TrichotomyBar container <ASIDE> element (custom) 1`] = `
+<aside
+  className=""
+/>
+`;
+
+exports[`Trichotomy Renders TrichotomyBar container <DIV> element (default) 1`] = `
+<div
+  className=""
+/>
+`;
+
+exports[`Trichotomy Renders TrichotomyBar container element with "right" CSS class if set 1`] = `
+<div
+  className="right"
+/>
+`;
+
+exports[`Trichotomy Renders TrichotomyBar container element with "someCustomClass right" CSS classes if set 1`] = `
+<div
+  className="someCustomClass right"
+/>
+`;
+
+exports[`Trichotomy Renders children into TrichotomyBar container element  1`] = `
+<div
+  className=""
+>
+  <div>
+    First child
+  </div>
+  <div>
+    Second child
+  </div>
+  <div>
+    Third child
+  </div>
+</div>
+`;

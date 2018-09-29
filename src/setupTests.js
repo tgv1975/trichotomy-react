@@ -1,7 +1,9 @@
-jest.mock('trichotomy/dist/trichotomy.min.css', () => {
-    return {
+jest.mock('trichotomy/dist/trichotomy.min.css', () => (
+    {
         trichotomy: 'trichotomy',
         vertical: 'vertical',
-        horizontal: 'horizontal'
+        horizontal: 'horizontal',
+        right: 'right',
+        centerpiece: 'centerpiece',
     }
-});
+));
