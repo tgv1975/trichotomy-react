@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trichotomy Renders TrichotomyCenterpiece container <ARTICLE> element (custom) 1`] = `
+<article
+  className="centerpiece"
+/>
+`;
+
+exports[`Trichotomy Renders TrichotomyCenterpiece container <DIV> element (default) 1`] = `
+<div
+  className="centerpiece"
+/>
+`;
+
+exports[`Trichotomy Renders TrichotomyCenterpiece container element with "centerpiece" CSS class 1`] = `
+<div
+  className="centerpiece"
+>
+  <div />
+</div>
+`;
+
+exports[`Trichotomy Renders TrichotomyCenterpiece container element with "someCustomClass centerpiece" CSS class if set 1`] = `
+<div
+  className="someCustomClass centerpiece"
+/>
+`;
+
+exports[`Trichotomy Renders children into TrichotomyCenterpiece container element  1`] = `
+<div
+  className="centerpiece"
+>
+  <div>
+    First child
+  </div>
+  <div>
+    Second child
+  </div>
+  <div>
+    Third child
+  </div>
+</div>
+`;

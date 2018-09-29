@@ -1,37 +1,44 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import trichotomy from 'trichotomy/dist/trichotomy.min.css';
 
-export default class Trichotomy extends Component {
+export default class Trichotomy extends PureComponent {
+    static defaultProps = {
+        tag: 'div',
+    }
+
     static propTypes = {
-        direction: PropTypes.oneOf(['vertical', 'horizontal']).isRequired
+        tag: PropTypes.string,
+        direction: PropTypes.oneOf(['vertical', 'horizontal']).isRequired,
     }
 
     render() {
         const {
             children,
             className,
-            direction
-        } = this.props
+            tag,
+            direction,
+        } = this.props;
 
-        let cssClass = (className &&
-            className.concat(' ', trichotomy.trichotomy)) ||
-            trichotomy.trichotomy;
+        const Tag = tag;
+
+        let cssClass = (className && className.concat(' ', trichotomy.trichotomy))
+            || trichotomy.trichotomy;
 
         switch (direction) {
             case 'horizontal':
-                cssClass = `${cssClass} ${trichotomy.horizontal}`
+                cssClass = `${cssClass} ${trichotomy.horizontal}`;
                 break;
             default:
-                cssClass = `${cssClass} ${trichotomy.vertical}`
+                cssClass = `${cssClass} ${trichotomy.vertical}`;
                 break;
         }
 
         return (
-            <div className={cssClass}>
+            <Tag className={cssClass}>
                 {children}
-            </div>
-        )
+            </Tag>
+        );
     }
 }

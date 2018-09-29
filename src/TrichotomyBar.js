@@ -1,30 +1,39 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import trichotomy from 'trichotomy/dist/trichotomy.min.css';
 
-export default class TrichotomyBar extends Component {
+export default class TrichotomyBar extends PureComponent {
+    static defaultProps = {
+        tag: 'div',
+        right: false,
+    }
+
     static propTypes = {
-        right: PropTypes.bool
+        tag: PropTypes.string,
+        right: PropTypes.bool,
     }
 
     render() {
         const {
             children,
             className,
-            right
+            right,
+            tag,
         } = this.props;
 
-        let cssClass = className;
+        const Tag = tag;
+
+        let cssClass = className || '';
 
         if (right) {
             cssClass = `${cssClass} ${trichotomy.right}`.trim();
         }
 
         return (
-            <div className={cssClass}>
+            <Tag className={cssClass}>
                 {children}
-            </div>
+            </Tag>
         );
     }
 }
