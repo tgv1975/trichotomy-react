@@ -1,6 +1,6 @@
 # trichotomy-react
 
-> React components for trichotomy.
+> React components to implement Trichotomy UI.
 
 [![NPM](https://img.shields.io/npm/v/trichotomy-react.svg)](https://www.npmjs.com/package/trichotomy-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
